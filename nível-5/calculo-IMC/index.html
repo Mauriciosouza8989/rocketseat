@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clculo IMC</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/ouL1lfSP_CyUgb5OUvI51jG3cevMfulA1GZGtS63r3Xfa8STYiIxq6KiY3PkMc6PcTk" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <p class="alertErro">Os campos são obrigatórios</p>
+    <div class="container">
+        <main class="card">
+            <h1>Calculo do IMC</h1>
+            <form>
+                <div>
+                    <label for="weight">peso(kg)</label>
+                    <input id="weight" type="number" placeholder="60" />
+                </div>
+                <div>
+                    <label for="height">altura(cm)</label>
+                    <input id="height" type="number" placeholder="178" />
+                </div>
+                <button type="submit">Calcular IMC <img src="./assets/arrow.svg" alt="ceta apontando para a direita"></button>
+            </form>
+        </main>
+        <div class="modal-wrapper">
+            <div class="modal card ">
+                <h2>
+                    <button id="close" onclick="removePopup()">
+                        <img src="./assets/close.svg" alt="imagem para fechar o popup">
+                    </button>
+                    <span class="span">seu imc é de 78</span>
+                </h2>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./js/main.js" type="module"></script>
+</body>
+
+</html>

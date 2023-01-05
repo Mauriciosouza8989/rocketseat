@@ -1,0 +1,37 @@
+import exporacaoPage from '../pages/exploracao.js'
+import homePage from '../pages/home.js'
+import universoPage from '../pages/universo.js'
+import erro from '../pages/404.js'
+let app = document.querySelector('#app')
+
+const body = document.querySelector('body')
+const links = document.querySelectorAll('a')
+const home = document.querySelector('.home')
+const universo = document.querySelector('.universo')
+const exploracao = document.querySelector('.exploracao')
+
+
+home.addEventListener('click', router('home'))
+universo.addEventListener('click', router('universo'))
+exploracao.addEventListener('click', router('exploracao'))
+
+function router(route) {
+    if (route === 'universo') {
+        alert('clicou')
+    }
+
+    // switch (route) {
+    //     case 'home':
+    //         alert('clicou')
+    //         app.innerHTML = String(homePage())
+    //         break
+    //     case 'universo':
+    //         app.innerHTML = universoPage()
+    //         break
+    //     case 'exploracao':
+    //         app.innerHTML = exporacaoPage()
+    //         break
+    //     default:
+    //         app.innerHTML = erro()
+    // }
+}

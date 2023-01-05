@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #060c2e;
+    font-family: 'Roboto', sans-serif;
+}
+
+body,
+input,
+button {
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.alertErro {
+    background-color: #F03E3E;
+    text-align: center;
+    color: #fff;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-30px);
+    transition: transform .5s;
+}
+
+.alertErro.open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    min-width: calc(42.8rem, 90%);
+    background-color: #fff;
+    margin-top: -8rem;
+    padding: 4.8rem 6.4rem 6.4rem;
+    display: grid;
+    gap: 3.2rem;
+    border-radius: 4px;
+    box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.1);
+}
+
+.card h1 {
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+.card form {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    color: #212529;
+}
+
+label {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+.card form div {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+input {
+    height: 5.2rem;
+    background: #DCE2E9;
+    border: 1px solid #02799D;
+    border-radius: 4px;
+    padding: 1.6rem;
+}
+
+input:focus {
+    outline: 2px solid #026381;
+}
+
+button {
+    height: 5.2rem;
+    background: #02799D;
+    border-radius: 4px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+    font-weight: bold;
+    transition: background .3s;
+}
+
+button:hover {
+    background-color: #026381;
+}
+
+.modal-wrapper {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: grid;
+    place-content: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-wrapper.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    position: relative;
+}
+
+.modal button {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    background: none;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.modal button:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width:500px) {
+    .card {
+        padding: 4.8rem 1.6rem;
+        width: 90%;
+        display: grid;
+        place-content: center;
+        position: relative;
+    }
+    .modal h2 button {
+        width: 20px;
+        position: absolute;
+        top: -1rem;
+        right: 1rem;
+        background: none;
+    }
+    form,
+    input,
+    button {
+        width: 100%;
+    }
+    body,
+    .alertErro {
+        width: 100vw;
+    }
+}

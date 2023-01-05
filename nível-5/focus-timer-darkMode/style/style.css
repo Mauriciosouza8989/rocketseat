@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+}
+
+.darkTeam {
+    background-color: #121214;
+}
+
+.lightTeam {
+    background-color: #fff;
+}
+
+header {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem;
+    gap: 11rem;
+}
+
+.hide {
+    display: none;
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+    width: 33rem;
+}
+
+.time span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: medium;
+    font-size: 12rem;
+    color: #29292E;
+}
+
+.controls {
+    max-width: 100%;
+    display: flex;
+    gap: 4rem;
+}
+
+.controls svg {
+    width: 4rem;
+}
+
+.sounds {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.sounds div {
+    display: flex;
+    gap: 3.2rem;
+}
+
+.card {
+    width: 13.8rem;
+    height: 15.2rem;
+    background-color: #E1E1E6;
+    padding: 2rem 1.55rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardDark {
+    background-color: #29292E;
+}
+
+.card img {
+    width: 4.4rem;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    appearance: none;
+    height: .5rem;
+    border-radius: 5px;
+    background-color: #29292E;
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    border-radius: 50%;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    appearance: none;
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+    background-color: #29292E;
+}
+
+svg,
+img {
+    max-width: 4.8rem;
+    cursor: pointer;
+}
+
+svg:hover,
+img:hover {
+    transform: scale(1.1);
+}
+
+.playing {
+    background-color: #02799D;
+}
+
+.playing.cardDark {
+    background-color: #0A3442;
+}
+
+.playing>button>svg path,
+.cardDark>button>svg path {
+    fill: #E1E1E6;
+}
+
+.playing.cardDark>button>svg path {
+    fill: #fff;
+}
+
+.playing>input,
+.cardDark>input,
+.playing.cardDark>input {
+    width: 90%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: .5rem;
+    border-radius: 5px;
+    background-color: #fff;
+    outline: none;
+}
+
+.playing>input[type=range]::-webkit-slider-thumb,
+.cardDark>input[type=range]::-webkit-slider-thumb {
+    appearance: none;
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+img {
+    margin-left: -4px;
+    margin-right: -4px;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+footer {
+    position: fixed;
+    bottom: 0rem;
+    right: 1rem;
+}
+
+.darkTeam>main>.timer>.controls>button>svg>path {
+    fill: #E1E1E6;
+}
+
+@media(max-width:900px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+    .controls,
+    .timer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

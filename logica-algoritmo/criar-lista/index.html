@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="page">
+        <div class="input">
+            <fieldset>
+                <div id="chooseOptions">
+                    <h1 id="msgToUser"></h1>
+                    <ol id="options">
+                        <li>Cadastrar um item na lista</li>
+                        <li>Mostrar itens cadastrados</li>
+                        <li>Sair do programa</li>
+                    </ol>
+                    <label for="option">opção</label>
+                    <input id="option" type="number">
+                    <input id="ok" type="button" value="ok" onclick="chooseOption()">
+                </div>
+                <div id="addList">
+                    <label for="addToList">Adicionar item</label>
+                    <input id="addToList" type="text">
+                    <input type="button" value="Adicionar" onclick="addList()">
+                    <input type="button" value="Finalizar" onclick="finalizar()">
+                </div>
+            </fieldset>
+
+            <div>
+                <ol id="list">
+
+                </ol>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

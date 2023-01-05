@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="temporizador estilo pomodoro">
+    <title>Focus timer - pomodoro</title>
+
+    <link rel="stylesheet" href="./stype.css">
+    <link rel="shortcut icon" href="./assets/timer.png" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div id="timer">
+            <span class="minuts">25</span>
+            <span>:</span>
+            <span class="seconds">00</span>
+        </div>
+        <div class="controls">
+            <button class="play">
+                    <img src="./assets/play-circle.png" alt="imagem de play">
+                </button>
+            <button class="pause hide">
+                    <img src="./assets/pause-circle.png" alt="imagem de pause">
+                </button>
+            <button class="stop hide">
+                    <img src="./assets/stop-circle.png" alt="imagem de um timer">
+                </button>
+            <button class="set">
+                    <img src="./assets/stopwatch.png" alt="imagem de stop">
+                </button>
+
+        </div>
+    </main>
+
+    <footer>
+        <button class="soundOn hide">
+            <img src="./assets/volume-medium.png" alt="desenho de um auto falante cortado indicando som ativo">
+        </button>
+        <button class="soundOff">
+            <img src="./assets/volume-mute.png" alt="desenho de um auto falante cortado indicando som mudo">
+        </button>
+    </footer>
+
+    <script src="./js/main.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "development"
+  ],
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not and_ff <= 106",
+    "not firefox <= 106"
+  ],
+  "hints": {
+    "disown-opener": "off",
+    "axe/structure": "off",
+    "axe/name-role-value": [
+      "default",
+      {
+        "link-name": "off"
+      }
+    ]
+  }
+}
