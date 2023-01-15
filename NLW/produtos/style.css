@@ -70,6 +70,8 @@ body {
 
 h1 {
     font-family: 'Crimson Pro', serif;
+    font-weight: bold;
+    font-size: 3.2rem;
 }
 
 .addToCart {
