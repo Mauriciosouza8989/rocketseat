@@ -1,6 +1,6 @@
 const questions = [
     "Qual é o seu nome?",
-    "O que eu aprendí hoje?",
+    "O que eu aprendi hoje?",
     "O que me deixou aborrecido? E o que eu posso fazer para melhorar?",
     "O que me deixou feliz hoje?",
     "Quantas pessoas eu ajudei hoje?",

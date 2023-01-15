@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #271A45;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    background-color: #D9CDF7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page {
+    display: flex;
+    gap: 1.3rem;
+}
+
+.left {
+    position: relative;
+}
+
+.left .sofa {
+    width: 44.9rem;
+}
+
+.left .rotate {
+    width: 3.2rem;
+    height: 2.2rem;
+    position: absolute;
+    top: 8px;
+    right: 5rem;
+}
+
+.left .x {
+    width: 1.6rem;
+    position: absolute;
+    top: 8px;
+    right: 5rem;
+    display: none;
+}
+
+.rotate:hover,
+.x:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+h1 {
+    font-family: 'Crimson Pro', serif;
+}
+
+.addToCart {
+    background-color: transparent;
+    border: 1px solid #271A45;
+    border-radius: 2rem;
+    padding: .8rem 1.6rem;
+    font-weight: regular;
+    font-size: 1.2rem;
+    flex-wrap: wrap;
+    transition: .3s;
+}
+
+.addToCart:hover {
+    background-color: #271A45;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media(max-width: 665px) {
+    .page {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        justify-content: center;
+        align-items: center;
+    }
+}

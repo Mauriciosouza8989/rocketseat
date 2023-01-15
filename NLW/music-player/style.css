@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+main {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.large {
+    width: 26.6rem;
+    padding: 3.8rem;
+    background-color: #2A2141;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    flex-direction: column;
+    gap: 30px;
+}
+
+p {
+    font-size: 1.9rem;
+    color: #C4C4CC;
+}
+
+.large .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.player {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+}
+
+.range,
+input {
+    width: 100%;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+}
+
+span {
+    font-size: 1.4rem;
+    color: #C4C4CC;
+}
+
+.large img {
+    width: 190px;
+}
+
+.large .controls img {
+    width: 29px;
+}
+
+h2 {
+    color: #E1E1E6;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.medium,
+.small {
+    display: flex;
+    background-color: #2A2141;
+    padding: 2.9rem;
+    gap: 2.8rem;
+    flex-direction: column;
+    border-radius: 1rem;
+    height: 26.7rem;
+}
+
+.medium img,
+.small img {
+    width: 8.5rem;
+    height: 8.5rem;
+}
+
+.medium .header,
+.small .header {
+    display: flex;
+    align-items: center;
+    gap: 2.9rem;
+}
+
+.medium .description,
+.small .description {
+    text-align: center;
+}
+
+.medium .player .controls,
+.small .player .controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.medium .player .controls img,
+.small .player .controls img {
+    width: 2.9rem;
+    height: 2.9rem;
+    cursor: pointer;
+}
+
+.small {
+    display: flex;
+    height: 19.9rem;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input {
+    -webkit-appearance: none;
+    appearance: none;
+    height: .4rem;
+    border-radius: 5px;
+    background-color: #6a6a6c;
+    outline: none;
+}
+
+input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: #E1E1E6;
+    cursor: pointer;
+}
