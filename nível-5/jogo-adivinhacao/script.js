@@ -65,6 +65,7 @@ function invalidNumber() {
             msgErro.innerText = 'Você errou! Tente novamente!';
             attempts++;
             tryeds += String(inputNumber.value);
+            inputNumber.value =""
         }
     } else {
         msgErro = `Já tentou o número ${inputNumber.value}`
